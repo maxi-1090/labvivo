@@ -1,0 +1,73 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: url('../../public/img/fondo.png') no-repeat center center fixed;
+    background-size: cover;
+    overflow-x: hidden;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+    background: linear-gradient(90deg, #ff7300a8 0%, #51f311 100%);
+}
+
+.logo img {
+    height: 100px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    padding: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    position: relative;
+}
+
+nav a::after {
+    content: "Próximamente";
+    position: absolute;
+    left: 0;
+    top: 100%;
+    color: rgb(252, 252, 252);
+    font-size: 12px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+nav a:hover::after {
+    opacity: 1;
+}
+
+.estrellas h2 {
+    position: absolute;
+    color: rgb(255, 0, 0);
+    font-size: 20px;
+}
+
+.texto1 {
+    top: 350px;
+    left: 250px;
+}
+
+.texto2 {
+    top:190px;
+    left: 530px;
+}
+
+.texto3 {
+    top: 350px;
+    left: 870px;
+}
+
+.texto4 {
+    top: 580px;
+    left: 570px;
+}
